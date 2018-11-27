@@ -10,7 +10,7 @@ Prerequisite to run this project:
 
 >SBT build tool in order to run the 2.5.9 play framework
 
->Git as version control
+>Git as version control (Thi will help if you wish to clone this project)
 
 Result displayed by using below API routes/
 
