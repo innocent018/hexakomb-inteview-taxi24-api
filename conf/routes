@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                            controllers.Application.index()
+
+#API Routes
+GET        /drivers                     controllers.Application.getDrivers()
+GET        /drivers/available           controllers.Application.getAvailableDrivers()
+GET        /driver/:id                  controllers.Application.getDriverById(id : Long)
+GET        /drivers/:location           controllers.Application.getAllAvailableDriverWithin3Km(location : String)
+GET        /drivers/location/:id        controllers.Application.getAllAvailableDriverWithin3KmById(id : Long)
+
+GET        /riders                      controllers.Application.getRiders()
+GET        /rider/:id                   controllers.Application.getRiderById(id : Long)
+
+GET        /trips/active                controllers.Application.getActiveTrips()
+
+POST       /new/trip                    controllers.Application.tripRequest()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file                controllers.Assets.at(path="/public", file)
