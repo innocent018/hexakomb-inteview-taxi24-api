@@ -32,5 +32,7 @@ Result displayed by using below API routes/
 
 / new /trip			                send new trip request
 
+NB: You can find a sample backup script into public/db folder
+
 
 Thanks to Hexakomb LTD.
